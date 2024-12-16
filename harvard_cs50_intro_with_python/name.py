@@ -1,12 +1,15 @@
+
+def main():
+   print("What is your name?")
+   name = input().strip().title()
+   hello(name)
+
+
+
+
+
 def hello(to="world!"):
    print("Hello,", to)
-
-
-print("What is your name?")
-name = input().strip().title()
-
-hello(name)
-
 
 
 # print(input("What is your name? ").strip().title())
@@ -32,3 +35,6 @@ hello(name)
 # print("Hello", "\"friend\"")
 
 # print("Hello", name)
+
+
+main()
