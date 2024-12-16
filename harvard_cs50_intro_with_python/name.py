@@ -1,8 +1,15 @@
-print ("Hello CS50!")
-# print("What is your name?")
-# name = input().strip().title()
+def hello(to="world!"):
+   print("Hello,", to)
 
-print(input("What is your name? ").strip().title())
+
+print("What is your name?")
+name = input().strip().title()
+
+hello(name)
+
+
+
+# print(input("What is your name? ").strip().title())
 
 
 # print("Hello " + name)
