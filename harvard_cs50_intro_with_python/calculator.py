@@ -1,17 +1,9 @@
-x=float(input("What is x? "))
-y=float(input("What is y? "))
+def main():
+   x= int(input("What's x?"))
+   print("x squared is", square(x))
+   
+def square(n):
+   return n*n
 
-# z=round(x+y, 2) 
-# print(f"{z:,}")    output: 1,000,000
 
-# z=x-y
-# print(z)
-
-# z=x*y
-# print(z)
-
-z=x/y
-print(f"{z:.2f}")
-
-# z=round(x/y, 2)
-# print(z)
+main()
