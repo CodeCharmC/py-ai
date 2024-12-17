@@ -1,23 +1,16 @@
-# print("meow")
-# print("meow")
-# print("meow")
-# print("meow")
-
-# n= int(input("How many times should I meow? "))
-while True:
-   n = int(input("How many times should I meow? "))
-   if n > 0:
-      break
+def main():
+   num = get_num()
+   meow(num)
 
 
-# while n > 0:
-#    print("-.-meow", end="")
-#    n -= 1
+def get_num():
+   while True:
+      n = int(input("How many times should I meow? "))
+      if n > 0:
+         return n
 
-# for i in [0, 1, 2, 3]:       a list of numbers = [0, 1, 2, 3]
-#    print("-.-meow", end="")
-for _ in range(n):
-   print("-.- meow", end=" ")
-print()
+def meow(n):
+   for _ in range(n):
+      print("-.- meow", end=" ")
 
-print("@.@ meow\n"*n, end="")
+main()
