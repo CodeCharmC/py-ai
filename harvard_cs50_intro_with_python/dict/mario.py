@@ -1,9 +1,13 @@
 def main():
-   print_row(4)
+   print_square(4)
 
 
-def print_row(w):
-   for _ in range(w):
-      print("[?]", end="")
+def print_square(n):
+   for i in range(n):
+      # for j in range(n):
+      #    print("[]", end="")
+      # print()
+      # or
+      print("[]" * n)
 
 main()
