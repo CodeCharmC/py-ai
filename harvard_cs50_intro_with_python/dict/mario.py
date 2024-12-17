@@ -1,9 +1,9 @@
 def main():
-   print_column(3)
+   print_row(4)
 
 
-def print_column(h):
-   for _ in range(h):
-      print("#")
+def print_row(w):
+   for _ in range(w):
+      print("[?]", end="")
 
 main()
