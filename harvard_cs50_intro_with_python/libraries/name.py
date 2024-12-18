@@ -13,7 +13,8 @@ import sys
 # another solution
 if len(sys.argv) < 2:
    sys.exit("Too few names")
-elif len(sys.argv) > 2:
-   sys.exit("Too many names")
+# elif len(sys.argv) > 2:
+#    sys.exit("Too many names")
 
-print("Hello, my name is", sys.argv[1])
+for arg in sys.argv[1:]:  #slice form the second element to the end
+   print("Hello, my name is", arg)
