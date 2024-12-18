@@ -11,19 +11,29 @@
 #    print("x is not a number")
 
 
-try:
-   x = int(input("What's x? "))   
-except ValueError:
-   print("x is not a number")
+# try:
+#    x = int(input("What's x? "))   
+# except ValueError:
+#    print("x is not a number")
 
-print(f"x is {x}")  
+# print(f"x is {x}")  
 #will give an error of
 #NameError: name 'x' is not defined   or scope error
 
 #solution   
-try:
-   x = int(input("What's x? "))   
-except ValueError:
-   print("x is not a number")
-else:
-   print(f"x is {x}")
+# try:
+#    x = int(input("What's x? "))   
+# except ValueError:
+#    print("x is not a number")
+# else:
+#    print(f"x is {x}")
+
+# a better solution
+while True:
+   try:
+      x = int(input("What's x? "))  
+      #break    its ok to break here
+   except ValueError:
+      print("x is not a number")
+   else:
+      break
