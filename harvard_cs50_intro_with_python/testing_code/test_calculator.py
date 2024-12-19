@@ -1,6 +1,8 @@
 from calculator import square
+import pytest
 
 """
+# manual testing
 def main():
    test_square()
 
@@ -34,10 +36,18 @@ if __name__ == "__main__":
    main()
 """
 
-
-def test_square():
+# automated testing a unit of code(also known as unit test) with pytest
+def test_square_positive():
    assert square(2) == 4
    assert square(3) == 9
+
+def test_square_negative():
    assert square(-2) == 4
    assert square(-3) == 9
+
+def test_square_zero():
    assert square(0) == 0
+
+def test_input_str():
+   with pytest.raises(TypeError):
+      square("cat")
