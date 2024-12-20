@@ -1,12 +1,11 @@
 import re 
 name = input("What's your name? ").strip().title()
 
-matches = re.search(r"^(.+), *(.+)$", name)
-if matches:
+if (matches := re.search(r"^(.+), *(.+)$", name)):
    name = matches.group(2) + " " + matches.group(1)
 print(f"Hello, {name}")
 
-
+# :=  also known as walrus operator. it will assign a value to a variable and ask a boolean question
 #. means any character
 #^ means start
 #$ means end
