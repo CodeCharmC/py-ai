@@ -35,12 +35,6 @@ class Student:
 def main():
    student = Student.get() 
    print(student)  
-
-# def get_student():
-#    name = input("Name: ").capitalize()
-#    house = input("House: ").capitalize()
-#    patronus = input("Patronus: ").capitalize()
-#    return Student(name, house, patronus)   
-
+   
 if __name__ == "__main__":
    main() 
