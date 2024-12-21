@@ -1,14 +1,21 @@
 class Student:
-   def __init__(self, name, house, patronus=""):
-      if not name:
-         raise ValueError("Missing name")
-      
+   def __init__(self, name, house, patronus=""):      
       self.name = name
       self.house = house
       # self.patronus = patronus
 
    def __str__(self):
       return f"{self.name} from {self.house}"
+   
+   @property            #Getter
+   def name(self):
+      return self._name
+   
+   @name.setter        #Setter
+   def name(self, name):
+      if not name:
+         raise ValueError("Missing name")
+      self._name = name
    
    @property            #Getter
    def house(self):
@@ -34,7 +41,6 @@ class Student:
 
 def main():
    student = get_student() 
-   # student.house = "Number Four, Privet Drive"
    print(student)  
    # print("Expecto Patronum!")
    # print(student.charm())   
