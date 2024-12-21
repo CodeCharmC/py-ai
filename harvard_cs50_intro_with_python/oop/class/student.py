@@ -7,9 +7,13 @@ class Student:
       self.name = name
       self.house = house
 
+   def __str__(self):
+      return "a student from " + self.house
+
 def main():
    student = get_student()   
-   print(f"{student.name} from {student.house}")
+   print(student)
+   # print(f"{student.name} from {student.house}")
 
 def get_student():
    name = input("Name: ").capitalize()
