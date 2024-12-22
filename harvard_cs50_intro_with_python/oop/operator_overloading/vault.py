@@ -6,7 +6,13 @@ class Vault:
 
    def __str__(self):
       return f"{self.galleons}g {self.sickles}s {self.knuts}k"
-
+   
+   def __add__(self, other):
+      galleons = self.galleons + other.galleons
+      sickles = self.sickles + other.sickles
+      knuts = self.knuts + other.knuts
+      return Vault(galleons, sickles, knuts)
+   
 potter = Vault(100, 50, 25)
 print(potter)
 
@@ -14,9 +20,12 @@ severus = Vault(25, 10, 5)
 print(severus)
 
 
-galleons = potter.galleons + severus.galleons
-sickles = potter.sickles + severus.sickles
-knuts = potter.knuts + severus.knuts
-total = Vault(galleons, sickles, knuts)
+# galleons = potter.galleons + severus.galleons
+# sickles = potter.sickles + severus.sickles
+# knuts = potter.knuts + severus.knuts
+# total = Vault(galleons, sickles, knuts)
+
+#alternative     
+total = potter + severus
 
 print(total)
