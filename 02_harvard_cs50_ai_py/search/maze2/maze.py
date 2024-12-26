@@ -7,3 +7,16 @@ class Node():
       self.parent = parent
       self.action = action
    
+
+class Frontier():
+   def __init__(self):
+      self.frontier = []
+
+   def add_node(self, node):
+      self.frontier.append(node)
+
+   def contains_state(self, state):
+      return any(node.state == state for node in self.frontier)
+   
+   def empty(self):
+      return len(self.frontier) == 0
