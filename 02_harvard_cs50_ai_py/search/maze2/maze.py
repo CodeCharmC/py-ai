@@ -30,3 +30,15 @@ class StackFrontier(Frontier):
          node = self.frontier[-1]
          self.frontier = self.frontier[:-1]
          return node
+
+
+class QueueFrintier(Frontier):
+   def remove(self):
+      if self.empty():
+         raise Exception("Empty frontier")
+      else:
+         node = self.frontier[0]
+         self.frontier = self.frontier[1:]
+         return node
+      
+   
