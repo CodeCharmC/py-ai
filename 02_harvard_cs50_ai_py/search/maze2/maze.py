@@ -20,3 +20,13 @@ class Frontier():
    
    def empty(self):
       return len(self.frontier) == 0
+
+   
+class StackFrontier(Frontier):
+   def remove(self):
+      if self.empty():
+         raise Exception("Empty frontier")
+      else:
+         node = self.frontier[-1]
+         self.frontier = self.frontier[:-1]
+         return node
