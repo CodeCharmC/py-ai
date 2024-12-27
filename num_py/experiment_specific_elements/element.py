@@ -8,3 +8,5 @@ print(a[0,1])
 #get a specific row
 print(a[0,:])
 
+#get a specific column  
+print(a[:,1])
