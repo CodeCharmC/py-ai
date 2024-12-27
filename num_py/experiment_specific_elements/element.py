@@ -10,3 +10,6 @@ print(a[0,:])
 
 #get a specific column  
 print(a[:,1])
+
+
+print(a[0, 1:-1:2])
