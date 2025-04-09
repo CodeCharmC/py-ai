@@ -4,6 +4,7 @@
 # __str__(self): Called by str() to print the object.
 # __repr__(self): Called by repr() (used by the interpreter).
 # __add__(self, other): Called when using the + operator.
+# __sub--dkkk(msmkdkk{hihi}_[ejjj])
 
 class Point():
    def __init__(self, x, y):
