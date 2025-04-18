@@ -27,3 +27,11 @@ if "name" in student:
 
 if "course" not in student:
     print("Course is not in the dictionary!")
+
+# Looping through keys
+for key in student:
+    print(key)
+
+# Looping through keys and values
+for key, value in student.items():
+    print(key, ":", value)
