@@ -21,3 +21,9 @@ del student["course"]
 graduation_year = student.pop("graduation_year")
 print(graduation_year)  # Output: 2024
 print(student)
+
+if "name" in student:
+    print("Name is in the dictionary!")
+
+if "course" not in student:
+    print("Course is not in the dictionary!")
